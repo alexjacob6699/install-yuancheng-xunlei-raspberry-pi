@@ -8,24 +8,24 @@
 
 clear
 echo "Installing"
-# unzip Xware1.0.31_armel_v5te_glibc.zip
-# chmod 777 ware1.0.31_armel_v5te_glibc
-mkdir /home/pi/1
-mkdir /home/pi/1/xunlei
-mkdir /home/pi/1/INTERNAL
-mkdir /home/pi/1/TDDOWNLOAD
+unzip Xware1.0.31_armel_v5te_glibc.zip
+chmod 777 ware1.0.31_armel_v5te_glibc
+mkdir /home/pi
+mkdir /home/pi/xunlei
+mkdir /home/pi/INTERNAL
+mkdir /home/pi/TDDOWNLOAD
 
-cp Xware1.0.31_armel_v5te_glibc/EmbedThunderManager /home/pi/1/xunlei
-cp Xware1.0.31_armel_v5te_glibc/ETMDaemon /home/pi/1/xunlei
-cp Xware1.0.31_armel_v5te_glibc/portal /home/pi/1/xunlei
+cp Xware1.0.31_armel_v5te_glibc/EmbedThunderManager /home/pi/xunlei
+cp Xware1.0.31_armel_v5te_glibc/ETMDaemon /home/pi/xunlei
+cp Xware1.0.31_armel_v5te_glibc/portal /home/pi/xunlei
 cp Xware1.0.31_armel_v5te_glibc/vod_httpserver /home/pi/1/xunlei
 
 
-mkdir /home/pi/1/INTERNAL
-mkdir /home/pi/1/INTERNAL/TDDOWNLOAD
-chmod 777 /home/pi/1/INTERNAL
-chmod 777 /home/pi/1/xunlei
+mkdir /home/pi/INTERNAL
+mkdir /home/pi/INTERNAL/TDDOWNLOAD
+chmod 777 /home/pi/INTERNAL
+chmod 777 /home/pi/xunlei
 
-mount --bind  /home/pi/1/xunlei  /home/pi/1/INTERNAL/TDDOWNLOAD
+mount --bind  /home/pi/xunlei  /home/pi/INTERNAL/TDDOWNLOAD
 
 echo "Done"
