@@ -1,6 +1,6 @@
-# Install Yuancheng Thunder on Raspberry Pi 
+# Install Yuancheng Xunlei on Raspberry Pi 
 
-Yuancheng Thunder is a downloading tool which supports HTTP, BT, ed2k, magnet, thunder. <br />
+Yuancheng Xunlei (also be called Yuancheng Thunder) is a downloading tool which supports HTTP, BT, ed2k, magnet, thunder. <br />
 Xwave is a firmware developed by XUNLEI which will be ran on Raspberry Pi.
 
 
