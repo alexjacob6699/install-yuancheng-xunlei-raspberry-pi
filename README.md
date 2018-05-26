@@ -1,12 +1,10 @@
-# Install Yuancheng Xunlei on Raspberry Pi 
+# Install Yuancheng Thunder on Raspberry Pi 
+
+Yuancheng Thunder is a downloading tool which supports HTTP, BT, ed2k, magnet, thunder. <br />
+Xwave is a firmware developed by XUNLEI which will be ran on Raspberry Pi.
 
 
-Yuancheng Xunlei is a downloading tool developed by a Xunlei.
-This script aimed to setup Yuancheng Xunlei on Raspberry Pi.
-This script is tested and running correctly on Raspberry Pi 3 with Debian 9.1
-
-
-## Method
+## Setup
 Make the script executable and run the script.
 ```
 sudo chmod +x install.sh
@@ -25,17 +23,26 @@ Now, you have already setup Yuancheng Xunlei. Log in [YuanchengXunlei](http://yu
 to register your Pi.
 
 
-## More
+## Run On Startup.
 
-If you want run it on startup.
+In order to have Yuancheng Xunlei run when the Pi boots, you can add commands to ```rc.local``` file.
+Use nano to edit ```rc.local``` file. 
 ```
-sudo nano /etc/rc.loca
+sudo nano /etc/rc.local
 ```
 
-Add codes follows before ```exit 0```
+Add commands below, but leave the ```exit 0``` at the end.
 ```
 sudo mount /home/pi/xunlei /home/pi/INTERNAL/TDDOWNLOAD
 sudo ./home/pi/xunlei/portal
 ```
+Save the file and exit.
 
-© Alexander Jacob 2018/25/5
+## Others
+If you want get more infomation about ```rc.local``` file, [click here](https://www.raspberrypi.org/documentation/linux/usage/rc-local.md) to read the Raspberry Pi Documentation.
+
+For more information about Xwave, [click here](http://luyou.xunlei.com/forum-51-1.html) to visit offical forum.
+
+
+
+© Alexander Jacob
